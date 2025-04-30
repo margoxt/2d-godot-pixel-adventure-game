@@ -3,4 +3,4 @@ extends Area2D
 
 func _on_body_entered(body: Node2D) -> void:
 	print("+1 coin")
-	queue_free()	#Remove the coin/ clear up the space
+	queue_free()	#Remove the coin/ node
