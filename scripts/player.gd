@@ -35,12 +35,12 @@ func _physics_process(delta: float) -> void:
 	else:	#Else we are in the air
 		animated_sprite.play("jump")
 		
-	
-
 	#Apply the movement
 	if direction:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+		
+	#If hit by enemy
+	
 	move_and_slide()

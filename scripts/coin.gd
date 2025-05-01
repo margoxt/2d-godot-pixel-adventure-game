@@ -6,8 +6,8 @@ identifier rather than a fixed path.
 Downside: nodes have to be on the same scene to connect'''
 
 @onready var game_manager: Node = %GameManager	
-
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 func _on_body_entered(body: Node2D) -> void:
 	game_manager.add_point()
-	queue_free()	#Remove the coin/ node
+	animation_player.play("pickup")
