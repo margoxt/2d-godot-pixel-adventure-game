@@ -2,19 +2,31 @@ extends CharacterBody2D
 
 const SPEED = 120.0
 const JUMP_VELOCITY = -300.0
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
-func _physics_process(delta: float) -> void:
-	# Add the gravity.
+'''Notes:
+physics_process runs at a fixed rate 60 times per second by default and helps physics run 
+smoothly. Is great for physics bodies/anything that moves/collides with its environment.'''
+
+func _physics_process(delta: float) -> void:	
+	#If the player is not standing on a platform, we add gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_up") and is_on_floor():
+	#If we press w and the player is on a platform we jump.
+	if Input.is_action_just_pressed("move_up") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
-	# Get the input direction and handle the movement/deceleration.
-	var direction := Input.get_axis("ui_left", "ui_right")
+	#Get the input direction and handle the movement/deceleration.
+	var direction := Input.get_axis("move_left", "move_right")
+	
+	#Change Flip-h in accordance to the direction of the player
+	if direction > 0: 	#Moving to the right
+		animated_sprite.flip_h = false
+	elif direction < 0:	#Moving to the left
+		animated_sprite.flip_h = true
 
+	#Apply the movement
 	if direction:
 		velocity.x = direction * SPEED
 	else:

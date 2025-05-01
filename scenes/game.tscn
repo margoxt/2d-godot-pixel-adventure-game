@@ -290,6 +290,12 @@ libraries = {
 }
 autoplay = "move"
 
+[node name="Platform3" parent="Platforms" instance=ExtResource("3_lnu2h")]
+position = Vector2(902, -113)
+
+[node name="Platform4" parent="Platforms" instance=ExtResource("3_lnu2h")]
+position = Vector2(834, -136)
+
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="Enemy" parent="Enemies" instance=ExtResource("6_p57ef")]
