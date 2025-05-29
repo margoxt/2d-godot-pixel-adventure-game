@@ -9,15 +9,15 @@ The main goal of this project was to:
 - Experiment with 2D game mechanics such as movement, collisions, and signals
 - Understand basic GDScript syntax and logic
 
-## Features
+## 🔧 Features
 - Simple 2D scene with basic player controls
 - Use of nodes like `KinematicBody2D`, `Sprite`, and `CollisionShape2D`
 - Basic physics interactions and input handling
 - Minimal UI elements
 
-## Notes
+## 📌 Notes
 - This project is **not** intended for release or production use.
 - This is mainly for self-learning purposes.
 
-## Credits
+## 📚 Credits
 - Big thanks to Brackey's tutorial for the wonderful project: https://www.youtube.com/@Brackeys.
