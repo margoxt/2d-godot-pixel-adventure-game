@@ -19,5 +19,5 @@ The main goal of this project was to:
 - This project is **not** intended for release or production use.
 - This is mainly for self-learning purposes.
 
-## 📚 Credits
-- Big thanks to Brackey's tutorial for the wonderful project: https://www.youtube.com/@Brackeys.
+## 📚 Reference
+- Thanks to Brackey's tutorial: https://www.youtube.com/@Brackeys.
