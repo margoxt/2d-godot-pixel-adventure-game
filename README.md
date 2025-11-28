@@ -21,3 +21,6 @@ The main goal of this project was to:
 
 ## 📚 Reference
 - Thanks to Brackey's tutorial: https://www.youtube.com/@Brackeys.
+
+## Game Preview
+![](assets/mr.knight.png)
